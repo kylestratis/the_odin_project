@@ -1,0 +1,21 @@
+Notes:
+
+Forms: 
+    Tree People:
+    Forms are for user input.
+    <form action="another_page.html" method="POST" name="my_form"> 
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <input type="radio" name="gender" value="Male">
+        <input type="radio" name="gender" value="Female">
+        <input type="checkbox" name="foods" value="Grape">Grapes<br>
+        <input type="checkbox" name="foods" value="Apples">Applies<br>
+        <input type="submit" value="Continue">
+    </form>
+    action attribute: page to go into after submission
+    method attribute: method to send date
+    name: name of the form
+    input type attr: pretty straightforward; password type obfuscates typing
+    radio types with same name allows them to be seen as same group.
+    Checkboxes - same
+    Submit - A button to submit the form.
