@@ -8,3 +8,8 @@
     width: 2.5rem;
     background-color: white;
 }
+
+.hovered {
+    background-color: red;
+}
+}

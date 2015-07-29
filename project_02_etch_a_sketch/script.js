@@ -9,4 +9,10 @@ $(document).ready(function() {
         $('#container').append(row);
         $('body').append('</div>');
     }
-})
+    $('.cell').mouseenter(function() {
+        $(this).addClass('hovered');
+    });
+    $('.cell').mouseleave(function() {
+       $(this).removeClass('hovered'); 
+    });
+});
