@@ -1,9 +1,9 @@
-$(document).ready(function() {
-    $('body').append('<div id="container">');
-    for(i = 0; i < 16; i++) {
+var create = function(result) {
+    $('body').append('<div id="container">');    
+    for(i = 0; i < result; i++) {
         var row = '<div>';
-        for(j = 0; j < 16; j++) {
-            row += '<div class="cell">' + j + '</div>';
+        for(j = 0; j < result; j++) {
+            row += '<div class="cell"></div>';
         }
         row += '</div>'
         $('#container').append(row);
@@ -15,4 +15,13 @@ $(document).ready(function() {
     $('.cell').mouseleave(function() {
        $(this).removeClass('hovered'); 
     });
+}
+
+$(document).ready(function() {
+    create(16);
+    document.getElementById('newGrid').onclick = function() {
+        var result = window.prompt('Enter new grid dimension');
+        $('div').remove();
+        create(result);
+    };
 });
