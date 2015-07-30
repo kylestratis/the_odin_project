@@ -12,9 +12,6 @@ var create = function(result) {
     $('.cell').mouseenter(function() {
         $(this).addClass('hovered');
     });
-    $('.cell').mouseleave(function() {
-       $(this).removeClass('hovered'); 
-    });
 }
 
 $(document).ready(function() {
