@@ -11,7 +11,12 @@ var create = function(result) {
     }
     $('.cell').mouseenter(function() {
         $(this).addClass('hovered');
+        $(this).css('background-color', randomRGB());
     });
+}
+
+var randomRGB = function() {
+    return '#'+(Math.random()*0xFFFFFF<<0).toString(16);    
 }
 
 $(document).ready(function() {
@@ -22,3 +27,4 @@ $(document).ready(function() {
         create(result);
     };
 });
+
