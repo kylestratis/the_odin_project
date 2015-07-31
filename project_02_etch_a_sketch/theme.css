@@ -6,7 +6,7 @@
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-
+    border: 1px solid #000;
     height: 2.5rem;
     width: 2.5rem;
     background-color: white;
